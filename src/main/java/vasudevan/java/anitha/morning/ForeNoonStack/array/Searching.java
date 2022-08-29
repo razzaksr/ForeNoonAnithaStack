@@ -9,6 +9,7 @@ public class Searching {
 	
 	String[] yet={"react","angular","jpa","django","alchemy","spring","vue"};
 	
+	// O(n)
 	public int linear(String userData) {
 		for(int pos=0;pos<yet.length;pos++) {
 			if(yet[pos].equalsIgnoreCase(userData))
@@ -17,6 +18,7 @@ public class Searching {
 		return -1;
 	}
 	
+	// O(logn)
 	public int binary(int start, int end, String userData) {
 		if(end>=start) {
 			int midPoint=start+(end-start)/2;
@@ -40,6 +42,7 @@ public class Searching {
 //		System.out.println(ser.linear("vue"));
 //		System.out.println(ser.linear("django"));
 		
+		// O(1)
 		Arrays.sort(ser.yet);
 		System.out.println(Arrays.toString(ser.yet));
 		
