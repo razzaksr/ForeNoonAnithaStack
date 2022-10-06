@@ -41,5 +41,6 @@ public class DemoBitwise {
 		determine^=myWay;
 		myWay^=determine;
 		System.out.println(myWay+" "+(int)determine);
+		System.out.println("Thankyou");
 	}
 }
